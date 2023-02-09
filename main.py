@@ -2,8 +2,8 @@ def recursion_sum(x):
     if len(x) == 0:
         return 0
     else:
-        p = x[len(x)-1]
-        x.pop(len(x)-1)
+        p = x[0]
+        x.pop(0)
         return p + recursion_sum(x)
 
 
